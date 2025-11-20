@@ -1032,7 +1032,7 @@ export default function EndorsementMonitor() {
       <div className="min-h-screen bg-white p-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-6 border-b-2 border-gray-300 pb-4">
-            <h1 className="text-2xl font-bold">MC03 Endorsement Flow Monitoring</h1>
+            <p className="text-md sm:text-xl font-bold">MC03 Endorsement Flow Monitoring</p>
           </div>
           <div className="flex flex-col items-center justify-center py-20">
             <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-indigo-600 mb-4"></div>
@@ -1048,7 +1048,7 @@ export default function EndorsementMonitor() {
       <div className="min-h-screen bg-white p-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-6 border-b-2 border-gray-300 pb-4">
-            <h1 className="text-2xl font-bold">MC03 Endorsement Flow Monitoring</h1>
+            <p className="text-md sm:text-xl font-bold">MC03 Endorsement Flow Monitoring</p>
           </div>
           <div className="bg-red-50 border border-red-200 rounded p-6 mb-6 flex gap-3 max-w-2xl mx-auto mt-10">
             <AlertCircle className="h-5 w-5 text-red-600 flex-shrink-0" />
@@ -1082,7 +1082,7 @@ export default function EndorsementMonitor() {
       <div className="min-h-screen bg-white p-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-6 border-b-2 border-gray-300 pb-4">
-            <h1 className="text-2xl font-bold">MC03 Endorsement Flow Monitoring</h1>
+            <p className="text-md sm:text-xl font-bold">MC03 Endorsement Flow Monitoring</p>
           </div>
           <div className="flex flex-col items-center justify-center py-20">
             <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-indigo-600 mb-4"></div>
@@ -1098,7 +1098,7 @@ export default function EndorsementMonitor() {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-4 border-b-2 border-gray-300 pb-4">
           <div>
-            <h1 className="text-2xl font-bold">MC03 Endorsement Flow Monitoring</h1>
+            <p className="text-md sm:text-xl font-bold">MC03 Endorsement Flow Monitoring</p>
             <div className="flex items-center gap-4 mt-1">
               <p className="text-sm text-green-600">✓ Connected to database</p>
               {lastRefreshed && (
@@ -1119,7 +1119,7 @@ export default function EndorsementMonitor() {
             <button 
               onClick={fetchGoogleSheetData} 
               disabled={loading}
-              className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 flex items-center gap-2 disabled:bg-gray-400"
+              className="px-4 py-2 bg-indigo-600 rounded hover:bg-indigo-700 flex items-center gap-2 disabled:bg-gray-400"
             >
               <RefreshCw className={`h-4 w-4 ${loading ? 'animate-spin' : ''}`} />
               {loading ? 'Refreshing...' : 'Refresh Now'}
@@ -1440,7 +1440,7 @@ export default function EndorsementMonitor() {
                   <div>
                     <label className="block text-xs font-medium text-gray-600 mb-2">View Mode</label>
                     <div className="flex gap-2">
-                      <button onClick={() => setViewMode('count')} className={`flex-1 p-2 rounded transition-colors ${viewMode === 'count' ? 'bg-red-500 text-white' : 'bg-gray-100 hover:bg-gray-200'}`} title="Count">
+                      <button onClick={() => setViewMode('count')} className={`flex-1 p-2 rounded transition-colors ${viewMode === 'count' ? 'bg-red-500' : 'bg-gray-100 hover:bg-gray-200'}`} title="Count">
                         <Hash className="h-5 w-5 mx-auto" />
                       </button>
                       <button onClick={() => setViewMode('ob')} className={`flex-1 p-2 rounded transition-colors ${viewMode === 'ob' ? 'bg-red-500 text-white' : 'bg-gray-100 hover:bg-gray-200'}`} title="Outstanding Balance">
@@ -1518,7 +1518,7 @@ export default function EndorsementMonitor() {
                 <div className="flex justify-between items-center mb-4">
                   <h2 className="text-lg font-bold">{selectedClient} - SUMMARY</h2>
                   <div className="flex gap-2">
-                    <button onClick={() => setViewMode('count')} className={`p-2 rounded ${viewMode === 'count' ? 'bg-red-500 text-white' : 'bg-gray-100'}`}><Hash className="h-5 w-5" /></button>
+                    <button onClick={() => setViewMode('count')} className={`p-2 rounded ${viewMode === 'count' ? 'bg-red-500' : 'bg-gray-100'}`}><Hash className="h-5 w-5" /></button>
                     <button onClick={() => setViewMode('ob')} className={`p-2 rounded ${viewMode === 'ob' ? 'bg-red-500 text-white' : 'bg-gray-100'}`}><DollarSign className="h-5 w-5" /></button>
                   </div>
                 </div>
