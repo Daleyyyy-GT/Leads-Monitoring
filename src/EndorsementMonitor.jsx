@@ -23,8 +23,8 @@ import { Hash, DollarSign, RefreshCw, AlertCircle, HelpCircle } from 'lucide-rea
 // GOOGLE SHEETS CONFIGURATION
 // ============================================
 // Replace these with your actual Google Sheet ID and API Key
-const GOOGLE_SHEET_ID = '1J7GV2zzvcYqz5mYu2B9pyQ8tUaL6CHNQ24kv2ahl8xM'; // Get from: docs.google.com/spreadsheets/d/[SHEET_ID]/edit
-const GOOGLE_API_KEY = 'AIzaSyCtJJTfEtsjL_iinfAesMjcWx6cskNAwOA'; // Get from: console.cloud.google.com/apis/credentials
+const GOOGLE_SHEET_ID = import.meta.env.VITE_API_G_SHEET_ID;
+const GOOGLE_API_KEY = import.meta.env.VITE_API_G_API_KEY;
 
 // Auto-refresh interval in milliseconds (default: 30 seconds)
 const AUTO_REFRESH_INTERVAL = 86400000;
