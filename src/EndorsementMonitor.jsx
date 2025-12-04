@@ -637,7 +637,7 @@ export default function EndorsementMonitor() {
     }, 0);
     
     // PENDING = Total Portfolio - VISITED
-    const totalPending = totalPortfolio - totalVisited;
+    const totalPending = endorseToField - totalVisited;
     
     return { totalPortfolio, endorseToField, totalVisited, totalPending, totalNewEndo, totalPullouts };
   }, [filteredFieldData, fieldEndoData, bomData, dailyData, selectedMonth, selectedProductType, viewMode, fieldStartDate, fieldEndDate]);
@@ -696,7 +696,7 @@ export default function EndorsementMonitor() {
     }, 0);
     
     // PENDING = Total Portfolio - VISITED
-    const totalPending = totalPortfolio - totalVisited;
+    const totalPending = endorseToField - totalVisited;
     
     return { totalPortfolio, endorseToField, totalVisited, totalPending, totalNewEndo, totalPullouts };
   }, [filteredFieldCampaignByClient, fieldEndoData, campaignBomData, campaignData, selectedMonth, selectedClient, viewMode, fieldStartDate, fieldEndDate]);
@@ -1189,7 +1189,7 @@ export default function EndorsementMonitor() {
                   <div className="text-sm font-semibold text-gray-600 mb-2">PENDING</div>
                   <div className="text-3xl font-bold text-orange-600">{formatNumber(fieldMetrics.totalPending)}</div>
                   <div className="text-xs text-gray-500 mt-2">
-                    Total Portfolio: {formatNumber(fieldMetrics.totalPortfolio)} - Visited: {formatNumber(fieldMetrics.totalVisited)}
+                    ETF: {formatNumber(fieldMetrics.totalPortfolio)} - Visited: {formatNumber(fieldMetrics.totalVisited)}
                   </div>
                 </div>
               </div>
@@ -1321,7 +1321,7 @@ export default function EndorsementMonitor() {
                   <div className="text-sm font-semibold text-gray-600 mb-2">PENDING</div>
                   <div className="text-3xl font-bold text-orange-600">{formatNumber(fieldCampaignMetrics.totalPending)}</div>
                   <div className="text-xs text-gray-500 mt-2">
-                    Total Portfolio: {formatNumber(fieldCampaignMetrics.totalPortfolio)} - Visited: {formatNumber(fieldCampaignMetrics.totalVisited)}
+                    ETF: {formatNumber(fieldCampaignMetrics.totalPortfolio)} - Visited: {formatNumber(fieldCampaignMetrics.totalVisited)}
                   </div>
                 </div>
               </div>
