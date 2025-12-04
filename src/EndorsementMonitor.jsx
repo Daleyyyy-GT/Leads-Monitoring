@@ -1175,7 +1175,7 @@ export default function EndorsementMonitor() {
                   <div className="text-sm font-semibold text-gray-600 mb-2">Endorse to Field</div>
                   <div className="text-3xl font-bold text-gray-900">{formatNumber(fieldMetrics.endorseToField)}</div>
                   <div className="text-xs text-gray-500 mt-2">
-                    Sum of ENDORSED TO FIELD (FIELD_ENDO)
+                    ENDORSED TO FIELD (FIELD_ENDO)
                   </div>
                 </div>
                 <div className="bg-white border rounded-lg p-6 shadow-sm">
@@ -1307,7 +1307,7 @@ export default function EndorsementMonitor() {
                   <div className="text-sm font-semibold text-gray-600 mb-2">Endorse to Field</div>
                   <div className="text-3xl font-bold text-gray-900">{formatNumber(fieldCampaignMetrics.endorseToField)}</div>
                   <div className="text-xs text-gray-500 mt-2">
-                    Sum of ENDORSED TO FIELD (FIELD_ENDO)
+                    ENDORSED TO FIELD (FIELD_ENDO)
                   </div>
                 </div>
                 <div className="bg-white border rounded-lg p-6 shadow-sm">
